@@ -1,12 +1,12 @@
 name: Pascal Laliberté
 author: Pascal Laliberté
-url: https://pascallaliberte.me
+url: https://pascallaliberte.ca
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
 excerpt_separator: "<!-- MORE -->"
 baseurl:
-gems:
+plugins:
   - jekyll-sitemap
 destination: public
 exclude: [public, Gemfile, Gemfile.lock, Rakefile, README.md, lib]
@@ -24,7 +24,22 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       lang: en
-include: [".well-known", "_redirects"]
+  -
+    scope:
+      path: "images/**"
+    values:
+      sitemap: false
+  -
+    scope:
+      path: "assets/**"
+    values:
+      sitemap: false
+  -
+    scope:
+      path: "humans.txt"
+    values:
+      sitemap: false
+include: ["_redirects"]
 collections:
   archived:
     output: true
@@ -44,3 +59,4 @@ collections:
       - language-of-objectives.md
 
 mastodon: https://ruby.social/@pascallaliberte
+bluesky: https://bsky.app/profile/pascallaliberte.ca

@@ -104,6 +104,6 @@ Hope they help.
 [readwith]: https://readwith.app/
 [ruby.social]: https://ruby.social/@pascallaliberte
 [twitter]: https://twitter.com/pascallaliberte
-[bluesky]: https://bsky.app/profile/pascallaliberte.me
+[bluesky]: https://bsky.app/profile/pascallaliberte.ca
 [mvm]: https://www.meetup.com/minimum-viable-meetup-ottawa/
 [railsbuilders]: https://rails.builders
