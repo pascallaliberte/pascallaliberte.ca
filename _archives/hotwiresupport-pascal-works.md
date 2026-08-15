@@ -1,6 +1,7 @@
 ---
 layout: archived
-link_alt_lang: /archives/hotwiresupport-pascal-works/
+lang: fr
+link_alt_lang: /archived/hotwiresupport-pascal-works/
 title: "Hotwire Office Hours"
 original_url: "https://hotwiresupport.pascal.works"
 wayback_url: "https://web.archive.org/web/20251011222724/https://hotwiresupport.pascal.works/"
@@ -8,4 +9,4 @@ desktop_screenshot: "/images/archived-sites/hotwiresupport-pascal-works-desktop-
 mobile_screenshot: "/images/archived-sites/hotwiresupport-pascal-works-mobile-20260116.png"
 ---
 
-An Office-Hours style paid calls over a week, offered once a month, on helping with Hotwire-related problems.
+Des appels payants de type « heures de bureau » sur une semaine, offerts une fois par mois, pour aider avec des problèmes liés à Hotwire.

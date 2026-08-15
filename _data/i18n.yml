@@ -1,0 +1,14 @@
+en:
+  retired_projects: Retired Projects
+  archived_back: /home/#archived
+  archived_footnote: This project is now retired. Here's a screenshot of the site as it was when it was active.
+  wayback: View on Wayback Machine
+  screenshot_desktop: Desktop view of
+  screenshot_mobile: Mobile view of
+fr:
+  retired_projects: Projets retirés
+  archived_back: /accueil/#archived
+  archived_footnote: Ce projet est maintenant retiré. Voici une capture d'écran du site tel qu'il était lorsqu'il était actif.
+  wayback: Voir sur Wayback Machine
+  screenshot_desktop: Vue bureau de
+  screenshot_mobile: Vue mobile de

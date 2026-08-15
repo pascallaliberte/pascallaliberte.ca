@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="{{ site.url }}/">
+    <link rel="alternate" hreflang="en" href="{{ site.url }}/home/">
+    <link rel="alternate" hreflang="fr" href="{{ site.url }}/accueil/">
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
+    <style>
+      html.js:not(.preview) body { display: none !important; }
+      html {
+        font-size: 18px;
+        height: 100%;
+      }
+      body {
+        box-sizing: border-box;
+        min-height: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        color: #645430;
+        font-family: "freight-sans-pro", Helvetica, Arial, sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+      p { margin: 0; }
+      a {
+        color: #bb5400;
+        margin: 0 0.6em;
+        padding: 0.2rem;
+        text-decoration: underline;
+      }
+      a:visited,
+      a:hover { color: #bb5400; }
+    </style>
+    <noscript>
+      <link rel="stylesheet" href="https://use.typekit.net/qqj0cow.css">
+    </noscript>
+    <script>
+      (function () {
+        var html = document.documentElement;
+        html.classList.remove('no-js');
+        html.classList.add('js');
+
+        function loadFonts() {
+          var l = document.createElement('link');
+          l.rel = 'stylesheet';
+          l.href = 'https://use.typekit.net/qqj0cow.css';
+          document.head.appendChild(l);
+        }
+
+        if (new URLSearchParams(location.search).has('preview')) {
+          html.classList.add('preview');
+          loadFonts();
+          return;
+        }
+
+        function prefersFrench() {
+          var saved;
+          try { saved = localStorage.getItem('lang'); } catch (e) {}
+          if (saved === 'fr' || saved === 'en') return saved === 'fr';
+          var langs = navigator.languages || [navigator.language || navigator.userLanguage || 'en'];
+          for (var i = 0; i < langs.length; i++) {
+            if (langs[i] && String(langs[i]).toLowerCase().replace('_', '-').indexOf('fr') === 0) {
+              return true;
+            }
+          }
+          return false;
+        }
+
+        var fr = prefersFrench();
+        try { localStorage.setItem('lang', fr ? 'fr' : 'en'); } catch (e) {}
+        location.replace(fr ? '/accueil/' : '/home/');
+      })();
+    </script>
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>

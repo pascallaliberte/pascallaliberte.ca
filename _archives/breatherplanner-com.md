@@ -1,10 +1,11 @@
 ---
 layout: archived
-link_alt_lang: /archives/breatherplanner-com/
+lang: fr
+link_alt_lang: /archived/breatherplanner-com/
 title: "Breather Planner"
 original_url: "breatherplanner.com"
 desktop_screenshot: "/images/archived-sites/breatherplanner-com-desktop-20250623.png"
 mobile_screenshot: "/images/archived-sites/breatherplanner-com-mobile-20250623.png"
 ---
 
-A small-run monthly planner that I had created for my wife initially and sold to a few friends.
+Un agenda mensuel tiré à petit nombre, que j'avais d'abord créé pour ma femme et vendu à quelques amis.
