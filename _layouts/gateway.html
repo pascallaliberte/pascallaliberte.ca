@@ -9,19 +9,56 @@
     <link rel="alternate" hreflang="fr" href="{{ site.url }}/accueil/">
     <link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
     <style>
-      html.js body { display: none !important; }
-      body {
-        font-family: Georgia, serif;
-        margin: 2rem;
-        line-height: 1.5;
+      html.js:not(.preview) body { display: none !important; }
+      html {
+        font-size: 18px;
+        height: 100%;
       }
-      a { margin-right: 1.5em; }
+      body {
+        box-sizing: border-box;
+        min-height: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        color: #645430;
+        font-family: "freight-sans-pro", Helvetica, Arial, sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+      p { margin: 0; }
+      a {
+        color: #bb5400;
+        margin: 0 0.6em;
+        padding: 0.2rem;
+        text-decoration: underline;
+      }
+      a:visited,
+      a:hover { color: #bb5400; }
     </style>
+    <noscript>
+      <link rel="stylesheet" href="https://use.typekit.net/qqj0cow.css">
+    </noscript>
     <script>
       (function () {
         var html = document.documentElement;
         html.classList.remove('no-js');
         html.classList.add('js');
+
+        function loadFonts() {
+          var l = document.createElement('link');
+          l.rel = 'stylesheet';
+          l.href = 'https://use.typekit.net/qqj0cow.css';
+          document.head.appendChild(l);
+        }
+
+        if (new URLSearchParams(location.search).has('preview')) {
+          html.classList.add('preview');
+          loadFonts();
+          return;
+        }
 
         function prefersFrench() {
           var saved;
