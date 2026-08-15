@@ -92,7 +92,7 @@ Hope they help.
 
 ## Thanks for reading
 
-[Subscribe to Everyone Wants Progress](everyonewantsprogress.com), my newsletter for digital creatives. Every Saturady AM.
+[Subscribe to Everyone Wants Progress](everyonewantsprogress.com), my newsletter for digital creatives. Every Saturday AM.
 
 [linkedin]: https://www.linkedin.com/in/pascallaliberte/
 [github]: https://github.com/pascallaliberte/
