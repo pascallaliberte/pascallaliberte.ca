@@ -11,7 +11,7 @@ Product designer and builder · Customer research for founders & PMs
 Ottawa, Canada
   
 Find me on [Bluesky][bluesky], [LinkedIn][linkedin], [Twitter][twitter], [Mastodon][ruby.social]{: rel="me" }, and [GitHub][github].  
-Or send me an [email](mailto:pascal@hey.com).
+Or send me an [email](mailto:pascal@sharpen.page).
 {: .home-intro }
 
 ## sharpen.page
