@@ -1,9 +1,19 @@
+{%- assign t = site.data.i18n[page.lang] -%}
 {% include head.html %}
   <body class="archived-layout">
-    
+    {% if page.link_alt_lang %}
+    <a class="link-alt-lang" href="{{ page.link_alt_lang }}" data-lang="{% if page.lang == "fr" %}en{% else %}fr{% endif %}">
+      {% if page.lang == "fr" %}
+        English
+      {% else %}
+        Français
+      {% endif %}
+    </a>
+    {% endif %}
+
     <div class="archived-site">
       <div class="archived-banner">
-        <a href="/#archived" class="back-link">← Retired Projects</a>
+        <a href="{{ t.archived_back }}" class="back-link">← {{ t.retired_projects }}</a>
         <div class="archived-title-container">
           <h1 class="archived-title">{{ page.title }}</h1>
           <code class="archived-url">{{ page.original_url }}</code>
@@ -11,16 +21,16 @@
         {{ content }}
 
         <div class="archived-footnote">
-          This project is now retired. Here's a screenshot of the site as it was when it was active.
+          {{ t.archived_footnote }}
           {% if page.wayback_url %}
-            <a href="{{ page.wayback_url }}" target="_blank">View on Wayback Machine</a>
+            <a href="{{ page.wayback_url }}" target="_blank">{{ t.wayback }}</a>
           {% endif %}
         </div>
       </div>
     
       <div class="screenshot-container">
-        <img src="{{ page.desktop_screenshot }}" alt="Desktop view of {{ page.title }}" class="desktop-screenshot">
-        <img src="{{ page.mobile_screenshot }}" alt="Mobile view of {{ page.title }}" class="mobile-screenshot">
+        <img src="{{ page.desktop_screenshot }}" alt="{{ t.screenshot_desktop }} {{ page.title }}" class="desktop-screenshot">
+        <img src="{{ page.mobile_screenshot }}" alt="{{ t.screenshot_mobile }} {{ page.title }}" class="mobile-screenshot">
       </div>
     </div>
     

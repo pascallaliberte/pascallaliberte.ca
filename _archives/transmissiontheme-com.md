@@ -1,6 +1,7 @@
 ---
 layout: archived
-link_alt_lang: /archives/transmissiontheme-com/
+lang: fr
+link_alt_lang: /archived/transmissiontheme-com/
 title: Transmission Theme
 original_url: "transmissiontheme.com"
 wayback_url: "https://web.archive.org/web/20241114103020/https://transmissiontheme.com/?trim=T01TT0-L02-D00"
@@ -8,4 +9,4 @@ desktop_screenshot: "/images/archived-sites/transmissiontheme-com-desktop-202506
 mobile_screenshot: "/images/archived-sites/transmissiontheme-com-mobile-20250620.png"
 ---
 
-A theme for the [Bullet Train](https://bullettrain.co) Rails starter kit.
+Un thème pour le kit de départ Rails [Bullet Train](https://bullettrain.co).

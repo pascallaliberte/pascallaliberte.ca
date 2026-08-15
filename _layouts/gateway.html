@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="{{ site.url }}/">
+    <link rel="alternate" hreflang="en" href="{{ site.url }}/home/">
+    <link rel="alternate" hreflang="fr" href="{{ site.url }}/accueil/">
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
+    <style>
+      html.js body { display: none !important; }
+      body {
+        font-family: Georgia, serif;
+        margin: 2rem;
+        line-height: 1.5;
+      }
+      a { margin-right: 1.5em; }
+    </style>
+    <script>
+      (function () {
+        var html = document.documentElement;
+        html.classList.remove('no-js');
+        html.classList.add('js');
+
+        function prefersFrench() {
+          var saved;
+          try { saved = localStorage.getItem('lang'); } catch (e) {}
+          if (saved === 'fr' || saved === 'en') return saved === 'fr';
+          var langs = navigator.languages || [navigator.language || navigator.userLanguage || 'en'];
+          for (var i = 0; i < langs.length; i++) {
+            if (langs[i] && String(langs[i]).toLowerCase().replace('_', '-').indexOf('fr') === 0) {
+              return true;
+            }
+          }
+          return false;
+        }
+
+        var fr = prefersFrench();
+        try { localStorage.setItem('lang', fr ? 'fr' : 'en'); } catch (e) {}
+        location.replace(fr ? '/accueil/' : '/home/');
+      })();
+    </script>
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>

@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang }}">
-<!--[if IEMobile 7 ]><html class="no-js iem7" lang="{{ page.lang }}"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8" lang="{{ page.lang }}"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="{{ page.lang }}"><!--<![endif]-->
+<html class="no-js" lang="{{ page.lang }}">
   <head>
+    <script>
+      document.documentElement.classList.remove('no-js');
+      document.documentElement.classList.add('js');
+      document.addEventListener('click', function (e) {
+        var link = e.target.closest ? e.target.closest('a.link-alt-lang[data-lang]') : null;
+        if (!link) return;
+        try { localStorage.setItem('lang', link.getAttribute('data-lang')); } catch (err) {}
+      });
+    </script>
     <title>{{ page.title }}</title>
     <meta name="title" content="{{ site.title }}">
     <meta name="description" content="{{ site.description }}">
@@ -11,6 +17,18 @@
     <meta name="Copyright" content="Copyright {{ site.author }}. All Rights Reserved.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    {% if page.link_alt_lang %}
+      {% if page.lang == "fr" %}
+        <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ page.url }}">
+        <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.link_alt_lang }}">
+      {% else %}
+        <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url }}">
+        <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ page.link_alt_lang }}">
+      {% endif %}
+      <link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
+    {% endif %}
 
     {% include og.html %}
 
