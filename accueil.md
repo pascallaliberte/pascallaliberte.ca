@@ -30,7 +30,7 @@ Un billet chaque semaine pour les créatifs numériques. Tous les samedis matin.
 
 ## Produits
 
-[ReadWith (readwith.app)][readwith] &mdash; Une façon inédite d'animer des groupes de lecture.
+[ReadWith (readwith.app)][readwith] &mdash; À votre tour de faire lire votre monde.
 
 ## Minimum Viable Meetup Ottawa
 
