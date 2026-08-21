@@ -10,3 +10,8 @@
 /outils-du-changement/*  /archived/change-anything/  301
 
 /jtbd/* / 301
+
+
+# For external content
+# e.g. /go/{kind}/{descriptive-slug} {url} 302
+/go/podcasts/bizblend-think-in-the-future-perfect-tense https://bizblend.captivate.fm/episode/think-in-the-future-perfect-tense-pascal-laliberte-on-bizblend 302
