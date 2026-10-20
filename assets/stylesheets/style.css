@@ -418,6 +418,34 @@ body #mc_embed_signup .mc-field-group-email {
   border-radius: 50%;
   margin-bottom: 1em;
 }
+.home .lastname {
+  white-space: nowrap;
+}
+.home .name-pronunciation {
+  display: inline-block;
+  position: relative;
+  margin-left: 0.7em;
+  padding: 0.2em 0.6em 0.25em;
+  border-radius: 0.7em;
+  background: #FDEA98;
+  color: #645430;
+  font-size: 0.68em;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  vertical-align: 0.12em;
+  white-space: nowrap;
+}
+.home .name-pronunciation::before {
+  content: "";
+  position: absolute;
+  left: -0.32em;
+  bottom: 0.38em;
+  border-width: 0.28em 0.4em 0.28em 0;
+  border-style: solid;
+  border-color: transparent #FDEA98 transparent transparent;
+}
 .home h2 {
   font-family: "freight-sans-condensed-pro", Helvetica, Arial, sans-serif;
   display: inline-block;

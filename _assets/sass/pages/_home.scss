@@ -13,6 +13,37 @@ $font-headings-home: "freight-sans-condensed-pro", Helvetica, Arial, sans-serif;
     margin-bottom: 1em;
   }
 
+  .lastname {
+    white-space: nowrap;
+  }
+
+  .name-pronunciation {
+    display: inline-block;
+    position: relative;
+    margin-left: 0.7em;
+    padding: 0.2em 0.6em 0.25em;
+    border-radius: 0.7em;
+    background: $color-highlight;
+    color: $color-text;
+    font-size: 0.68em;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+    vertical-align: 0.12em;
+    white-space: nowrap;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -0.32em;
+      bottom: 0.38em;
+      border-width: 0.28em 0.4em 0.28em 0;
+      border-style: solid;
+      border-color: transparent $color-highlight transparent transparent;
+    }
+  }
+
   h2 {
     font-family: $font-headings-home;
     display: inline-block;

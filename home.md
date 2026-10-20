@@ -9,7 +9,7 @@ link_alt_lang: /accueil/
 
 ![Photo of Pascal](/images/pascallaliberte-avatar.jpg){: .avatar }
 
-**Pascal Laliberté**  
+<strong>Pascal <span class="lastname">Laliberté<span class="name-pronunciation" aria-hidden="true">lah-lee-bear-tay</span></span></strong>  
 Product designer and builder · Customer research for founders & PMs  
 Ottawa, Canada
   
