@@ -36,7 +36,7 @@ On accueille habituellement entre 12 et 24 personnes : développeurs, pigistes q
 ## Projets retirés
 {: #projets-retires }
 
-Quelques offres de service spécialisées, et quelques produits au fil des années.
+Un blogue qui a roulé pendant plusieurs années, quelques offres de service spécialisées, et quelques produits au fil des années.
 
 <ul class="archived-projects-list">
 {% for archived in site.archives %}

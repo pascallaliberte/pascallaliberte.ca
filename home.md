@@ -36,7 +36,7 @@ It usually attracts between 12 to 24 participants, varying from software develop
 ## Retired Projects
 {: #archived }
 
-A few specialized service offerings, and a couple products from over the years.
+A long-running blog, a few specialized service offerings, and a couple products from over the years.
 
 <ul class="archived-projects-list">
 {% for archived in site.archived %}
