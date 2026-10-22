@@ -23,11 +23,6 @@ A product sharpening service. I help founders and product managers get into the 
 
 [Work with me](https://sharpen.page/customer-research/) · [Free: ten articles over ten weeks](https://sharpen.page/ten/) · [sharpen.page][sharpen-page]
 
-## Everyone Wants Progress
-
-A weekly post for digital creatives. Every Saturday AM.  
-[everyonewantsprogress.com](https://everyonewantsprogress.com)
-
 ## Products
 
 [ReadWith (readwith.app)][readwith] &mdash; A novel way to lead reading groups.
@@ -89,14 +84,8 @@ These questions help me stay true, and they help me make good choices. I hope th
 Hope they help.
 
 [havedonelists]: https://medium.com/@pascallaliberte/but-i-care-about-so-many-things-2a7808981647
-
 [taskpaper]: https://www.taskpaper.com
 [theme-notes-first]: https://github.com/pascallaliberte/theme-notes-first
-
-## Thanks for reading
-
-[Subscribe to Everyone Wants Progress](https://everyonewantsprogress.com), my newsletter for digital creatives. Every Saturday AM.
-
 [linkedin]: https://www.linkedin.com/in/pascallaliberte/
 [github]: https://github.com/pascallaliberte/
 [youtube]: https://www.youtube.com/channel/UCo2CttXwSgcaEmrTsALqS-A
