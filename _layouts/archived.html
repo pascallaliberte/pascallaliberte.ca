@@ -16,12 +16,25 @@
         <a href="{{ t.archived_back }}" class="back-link">← {{ t.retired_projects }}</a>
         <div class="archived-title-container">
           <h1 class="archived-title">{{ page.title }}</h1>
-          <code class="archived-url">{{ page.original_url }}</code>
+          {% if page.live_url %}
+            <a class="archived-url" href="{{ page.live_url }}" target="_blank"><code>{{ page.original_url }}</code></a>
+          {% else %}
+            <code class="archived-url">{{ page.original_url }}</code>
+          {% endif %}
         </div>
         {{ content }}
 
         <div class="archived-footnote">
           {{ t.archived_footnote }}
+          {% if page.live_url %}
+            {% assign live_label = page.live_url | replace: "https://", "" | replace: "http://", "" %}
+            {% assign live_label_last = live_label | slice: -1, 1 %}
+            {% if live_label_last == "/" %}
+              {% assign live_label_length = live_label | size | minus: 1 %}
+              {% assign live_label = live_label | slice: 0, live_label_length %}
+            {% endif %}
+            {{ t.live_site }} <a href="{{ page.live_url }}" target="_blank">{{ live_label }}</a>.
+          {% endif %}
           {% if page.wayback_url %}
             <a href="{{ page.wayback_url }}" target="_blank">{{ t.wayback }}</a>
           {% endif %}
@@ -129,6 +142,20 @@
 
     .archived-url {
       font-size: 0.8rem;
+    }
+
+    a.archived-url,
+    a.archived-url:visited,
+    a.archived-url:hover,
+    a.archived-url:active {
+      color: inherit;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
+
+    a.archived-url:hover {
+      text-decoration: underline;
     }
 
     .archived-footnote {
