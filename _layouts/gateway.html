@@ -75,7 +75,9 @@
 
         var fr = prefersFrench();
         try { localStorage.setItem('lang', fr ? 'fr' : 'en'); } catch (e) {}
-        location.replace(fr ? '/accueil/' : '/home/');
+        var hash = location.hash || '';
+        if (fr && hash === '#archived') hash = '#projets-retires';
+        location.replace((fr ? '/accueil/' : '/home/') + hash);
       })();
     </script>
   </head>

@@ -39,7 +39,7 @@ J'organise un [meetup local à Ottawa][mvm], et notre événement principal s'ap
 On accueille habituellement entre 12 et 24 personnes : développeurs, pigistes qui travaillent sur leur site, designers, parfois un designer industriel, quelqu'un qui fabrique un objet, des coachs. C'est diversifié, et c'est beau de voir chacun avancer sur sa chose. [Passez nous voir si vous êtes à Ottawa][mvm].
 
 ## Projets retirés
-{: #archived }
+{: #projets-retires }
 
 Quelques offres de service spécialisées, et quelques produits au fil des années.
 
