@@ -51,6 +51,7 @@ collections:
     output: true
     permalink: /archived/:path/
     order:
+      - everyonewantsprogress-com.md
       - hotwiresupport-pascal-works.md
       - hotwiremigration-pascal-works.md
       - bullettrain-pascal-works.md
@@ -68,6 +69,7 @@ collections:
     output: true
     permalink: /archives/:path/
     order:
+      - everyonewantsprogress-com.md
       - hotwiresupport-pascal-works.md
       - hotwiremigration-pascal-works.md
       - bullettrain-pascal-works.md

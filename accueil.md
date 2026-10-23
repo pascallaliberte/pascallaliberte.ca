@@ -23,11 +23,6 @@ Un service d'affûtage de produit. J'aide les fondateurs et les chefs de produit
 
 [Travailler avec moi](https://sharpen.page/customer-research/) · [Gratuit : dix articles en dix semaines](https://sharpen.page/ten/) · [sharpen.page][sharpen-page]
 
-## Everyone Wants Progress
-
-Un billet chaque semaine pour les créatifs numériques. Tous les samedis matin.  
-[everyonewantsprogress.com](https://everyonewantsprogress.com)
-
 ## Produits
 
 [ReadWith (readwith.app)][readwith] &mdash; À votre tour de faire lire votre monde.
@@ -41,7 +36,7 @@ On accueille habituellement entre 12 et 24 personnes : développeurs, pigistes q
 ## Projets retirés
 {: #projets-retires }
 
-Quelques offres de service spécialisées, et quelques produits au fil des années.
+Un blogue qui a roulé pendant plusieurs années, quelques offres de service spécialisées, et quelques produits au fil des années.
 
 <ul class="archived-projects-list">
 {% for archived in site.archives %}
@@ -89,14 +84,8 @@ Ces questions m'aident à rester vrai, et à faire de bons choix. J'espère qu'e
 J'espère que ça aide.
 
 [havedonelists]: https://medium.com/@pascallaliberte/but-i-care-about-so-many-things-2a7808981647
-
 [taskpaper]: https://www.taskpaper.com
 [theme-notes-first]: https://github.com/pascallaliberte/theme-notes-first
-
-## Merci d'avoir lu
-
-[Abonnez-vous à Everyone Wants Progress](https://everyonewantsprogress.com), mon infolettre pour les créatifs numériques. Tous les samedis matin.
-
 [linkedin]: https://www.linkedin.com/in/pascallaliberte/
 [github]: https://github.com/pascallaliberte/
 [youtube]: https://www.youtube.com/channel/UCo2CttXwSgcaEmrTsALqS-A
